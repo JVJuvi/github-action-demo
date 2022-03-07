@@ -3,19 +3,9 @@ name: CI
 on:
   push:
     branches: [ main ]
-    tags:
-      - master
-      - /^release-dev-.*$/
-      - /^release-prod-.*$/
-      - /^release-stg-.*$/
       
   pull_request:
     branches: [ main ]
-    tags:
-      - master
-      - /^release-dev-.*$/
-      - /^release-prod-.*$/
-      - /^release-stg-.*$/
 
 jobs:
   build_dev:
