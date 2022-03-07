@@ -30,3 +30,12 @@ jobs:
       - name: Run stg
         run: |
          echo "Running stg"
+         
+  deploy_dev:
+    runs-on: ubuntu-latest
+    needs: build_dev
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run stg
+        run: |
+         echo "Running stg"
