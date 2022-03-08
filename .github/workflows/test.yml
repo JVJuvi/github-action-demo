@@ -1,5 +1,6 @@
 name: Test rubocop and brakeman
-on: [push]
+on: 
+  push: 
 jobs:
   test_rubocop:
     runs-on: ubunto-latest
