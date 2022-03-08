@@ -15,22 +15,6 @@ jobs:
       - name: Run dev
         run: |
          echo "Running dev"
-      
-  build_prod:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Run prod
-        run: |
-         echo "Running prod"
-      
-  build_stg:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Run stg
-        run: |
-         echo "Running stg"
          
   test_dev:
     runs-on: ubuntu-latest
