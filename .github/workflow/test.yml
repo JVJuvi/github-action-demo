@@ -1,0 +1,14 @@
+name: Test rubocop and brakeman
+on: [push]
+jobs:
+  test_rubocop:
+    runs-on: ununto-latest
+    steps:
+      name: Run rubocop
+      run: echo "run rubocop"
+      
+  test_brakeman:
+    runs-on: ununto-latest
+    steps:
+      name: Run brakeman
+      run: echo "run brakeman"
