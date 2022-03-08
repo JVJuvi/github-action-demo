@@ -32,11 +32,19 @@ jobs:
         run: |
          echo "Running stg"
          
+  test_dev:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run test dev
+        run: |
+         echo "Running test dev"
+         
   deploy_dev:
     runs-on: ubuntu-latest
     needs: [build_dev]
     steps:
       - uses: actions/checkout@v2
-      - name: Run stg
+      - name: Run deploy dev
         run: |
-         echo "Running stg"
+         echo "Running deploy dev"
