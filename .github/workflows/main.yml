@@ -2,8 +2,8 @@ name: CI
 
 on:
   push: 
-    tags:        
-      - /^release-dev-.*$/
+#     tags:        
+#       - /^release-dev-.*$/
   pull_request:
   workflow_dispatch:
 
