@@ -3,7 +3,7 @@ on:
   push: 
 jobs:
   test_rubocop:
-    runs-on: ubunto-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: Run rubocop
@@ -11,7 +11,7 @@ jobs:
          echo "run rubocop"
       
   test_brakeman:
-    runs-on: ubunto-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: Run brakeman
